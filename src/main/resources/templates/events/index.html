@@ -16,9 +16,12 @@
             <th>Name</th>
         </tr>
         </thead>
-        <tr th:each="event: ${events}">
-                <td th:text="${event}"></td>
-        </tr>
+        <th:block>
+            <tr th:each="event: ${events}">
+                <td th:text="${event.name}"></td>
+
+            </tr>
+        </th:block>
     </table>
 </body>
 </html>
