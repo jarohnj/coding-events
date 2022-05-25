@@ -50,4 +50,6 @@ public class EventController {
         }
         return "redirect:";
     }
+
+
 }
